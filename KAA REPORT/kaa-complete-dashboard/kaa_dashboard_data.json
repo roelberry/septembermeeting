@@ -1,0 +1,272 @@
+{
+  "totals": {
+    "clicks": 96,
+    "impressions": 2437,
+    "ctr": 3.94,
+    "countries": 62,
+    "queries_tracked": 163
+  },
+  "geographic": {
+    "us_dominance": {
+      "clicks": 95,
+      "impressions": 1906,
+      "ctr": 4.98,
+      "position": 15.9
+    },
+    "international_reach": 61,
+    "total_countries": 62
+  },
+  "top_queries": [
+    {
+      "Top queries": "kokomo art association",
+      "Clicks": 24,
+      "Impressions": 37,
+      "CTR": "64.86%",
+      "Position": 1.0
+    },
+    {
+      "Top queries": "kaa online",
+      "Clicks": 3,
+      "Impressions": 13,
+      "CTR": "23.08%",
+      "Position": 8.85
+    },
+    {
+      "Top queries": "kokomo art center",
+      "Clicks": 2,
+      "Impressions": 21,
+      "CTR": "9.52%",
+      "Position": 2.14
+    },
+    {
+      "Top queries": "kokomo art gallery",
+      "Clicks": 2,
+      "Impressions": 11,
+      "CTR": "18.18%",
+      "Position": 1.64
+    },
+    {
+      "Top queries": "artworks gallery",
+      "Clicks": 1,
+      "Impressions": 100,
+      "CTR": "1%",
+      "Position": 63.04
+    },
+    {
+      "Top queries": "ramona daniels",
+      "Clicks": 1,
+      "Impressions": 22,
+      "CTR": "4.55%",
+      "Position": 6.95
+    },
+    {
+      "Top queries": "mona daniels",
+      "Clicks": 1,
+      "Impressions": 4,
+      "CTR": "25%",
+      "Position": 12.75
+    },
+    {
+      "Top queries": "art near me",
+      "Clicks": 1,
+      "Impressions": 2,
+      "CTR": "50%",
+      "Position": 2.0
+    },
+    {
+      "Top queries": "art classes near me",
+      "Clicks": 1,
+      "Impressions": 2,
+      "CTR": "50%",
+      "Position": 2.5
+    },
+    {
+      "Top queries": "painting party near me",
+      "Clicks": 1,
+      "Impressions": 1,
+      "CTR": "100%",
+      "Position": 8.0
+    }
+  ],
+  "top_pages": [
+    {
+      "Top pages": "https://www.kaaonline.org/",
+      "Clicks": 48,
+      "Impressions": 1417,
+      "CTR": "3.39%",
+      "Position": 16.44
+    },
+    {
+      "Top pages": "https://www.kaaonline.org/classes",
+      "Clicks": 17,
+      "Impressions": 491,
+      "CTR": "3.46%",
+      "Position": 8.66
+    },
+    {
+      "Top pages": "https://www.kaaonline.org/kokomo-art-center",
+      "Clicks": 8,
+      "Impressions": 351,
+      "CTR": "2.28%",
+      "Position": 9.03
+    },
+    {
+      "Top pages": "https://www.kaaonline.org/artworks-gallery",
+      "Clicks": 5,
+      "Impressions": 239,
+      "CTR": "2.09%",
+      "Position": 7.45
+    },
+    {
+      "Top pages": "https://www.kaaonline.org/digital-photography",
+      "Clicks": 5,
+      "Impressions": 67,
+      "CTR": "7.46%",
+      "Position": 29.18
+    },
+    {
+      "Top pages": "https://www.kaaonline.org/artists",
+      "Clicks": 4,
+      "Impressions": 332,
+      "CTR": "1.2%",
+      "Position": 12.0
+    },
+    {
+      "Top pages": "https://www.kaaonline.org/about",
+      "Clicks": 4,
+      "Impressions": 312,
+      "CTR": "1.28%",
+      "Position": 5.55
+    },
+    {
+      "Top pages": "https://www.kaaonline.org/membership-benefits",
+      "Clicks": 3,
+      "Impressions": 58,
+      "CTR": "5.17%",
+      "Position": 12.97
+    }
+  ],
+  "devices": [
+    {
+      "Device": "Mobile",
+      "Clicks": 67,
+      "Impressions": 931,
+      "CTR": "7.2%",
+      "Position": 9.4
+    },
+    {
+      "Device": "Desktop",
+      "Clicks": 28,
+      "Impressions": 1492,
+      "CTR": "1.88%",
+      "Position": 21.85
+    },
+    {
+      "Device": "Tablet",
+      "Clicks": 1,
+      "Impressions": 14,
+      "CTR": "7.14%",
+      "Position": 4.86
+    }
+  ],
+  "recent_trends": [
+    {
+      "Date": "2025-09-07",
+      "Clicks": 1,
+      "Impressions": 86,
+      "CTR": "1.16%",
+      "Position": 24.4
+    },
+    {
+      "Date": "2025-09-06",
+      "Clicks": 1,
+      "Impressions": 74,
+      "CTR": "1.35%",
+      "Position": 20.07
+    },
+    {
+      "Date": "2025-09-05",
+      "Clicks": 6,
+      "Impressions": 107,
+      "CTR": "5.61%",
+      "Position": 13.41
+    },
+    {
+      "Date": "2025-09-04",
+      "Clicks": 1,
+      "Impressions": 71,
+      "CTR": "1.41%",
+      "Position": 22.46
+    },
+    {
+      "Date": "2025-09-03",
+      "Clicks": 4,
+      "Impressions": 117,
+      "CTR": "3.42%",
+      "Position": 16.22
+    },
+    {
+      "Date": "2025-09-02",
+      "Clicks": 1,
+      "Impressions": 108,
+      "CTR": "0.93%",
+      "Position": 23.06
+    },
+    {
+      "Date": "2025-09-01",
+      "Clicks": 3,
+      "Impressions": 74,
+      "CTR": "4.05%",
+      "Position": 21.53
+    },
+    {
+      "Date": "2025-08-31",
+      "Clicks": 3,
+      "Impressions": 99,
+      "CTR": "3.03%",
+      "Position": 21.79
+    },
+    {
+      "Date": "2025-08-30",
+      "Clicks": 3,
+      "Impressions": 78,
+      "CTR": "3.85%",
+      "Position": 30.17
+    },
+    {
+      "Date": "2025-08-29",
+      "Clicks": 8,
+      "Impressions": 86,
+      "CTR": "9.3%",
+      "Position": 29.16
+    },
+    {
+      "Date": "2025-08-28",
+      "Clicks": 2,
+      "Impressions": 93,
+      "CTR": "2.15%",
+      "Position": 25.55
+    },
+    {
+      "Date": "2025-08-27",
+      "Clicks": 4,
+      "Impressions": 88,
+      "CTR": "4.55%",
+      "Position": 18.05
+    },
+    {
+      "Date": "2025-08-26",
+      "Clicks": 6,
+      "Impressions": 110,
+      "CTR": "5.45%",
+      "Position": 14.16
+    },
+    {
+      "Date": "2025-08-25",
+      "Clicks": 5,
+      "Impressions": 90,
+      "CTR": "5.56%",
+      "Position": 17.48
+    }
+  ]
+}

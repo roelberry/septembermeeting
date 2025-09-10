@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kokomo Art Association - Board Analytics Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Header -->
+        <header class="dashboard-header">
+            <div class="header-content">
+                <div class="header-text">
+                    <h1>Kokomo Art Association</h1>
+                    <p>Board Analytics Dashboard - Google Search Console Data</p>
+                    <div class="header-stats">
+                        <span class="header-stat">📊 163 Search Queries Tracked</span>
+                        <span class="header-stat">🌍 62 Countries Reached</span>
+                        <span class="header-stat">📱 Mobile-First Traffic</span>
+                    </div>
+                </div>
+                <button class="btn btn--outline print-btn" onclick="window.print()">📄 Print Report</button>
+            </div>
+        </header>
+
+        <!-- Navigation Tabs -->
+        <nav class="tab-navigation">
+            <button class="tab-btn active" data-tab="executive">Executive Summary</button>
+            <button class="tab-btn" data-tab="global">Global Reach</button>
+            <button class="tab-btn" data-tab="queries">Search Performance</button>
+            <button class="tab-btn" data-tab="pages">Page Analytics</button>
+            <button class="tab-btn" data-tab="devices">Device Insights</button>
+            <button class="tab-btn" data-tab="trends">Temporal Trends</button>
+            <button class="tab-btn" data-tab="seo">SEO Analysis</button>
+            <button class="tab-btn" data-tab="actions">Action Items</button>
+        </nav>
+
+        <!-- Executive Summary Tab -->
+        <section id="executive" class="tab-content active">
+            <div class="executive-hero">
+                <h2>Executive Summary</h2>
+                <p class="hero-subtitle">Comprehensive 28-day Google Search Console performance analysis</p>
+            </div>
+            
+            <div class="metrics-grid">
+                <div class="metric-card highlight">
+                    <div class="metric-icon">🎯</div>
+                    <div class="metric-value">96</div>
+                    <div class="metric-label">Total Clicks</div>
+                    <div class="metric-trend positive">Strong Performance</div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-icon">👁️</div>
+                    <div class="metric-value">2,437</div>
+                    <div class="metric-label">Total Impressions</div>
+                    <div class="metric-subtext">Excellent Visibility</div>
+                </div>
+                
+                <div class="metric-card success">
+                    <div class="metric-icon">📊</div>
+                    <div class="metric-value">3.94%</div>
+                    <div class="metric-label">Overall CTR</div>
+                    <div class="metric-trend positive">Above Average</div>
+                </div>
+                
+                <div class="metric-card international">
+                    <div class="metric-icon">🌍</div>
+                    <div class="metric-value">62</div>
+                    <div class="metric-label">Countries Reached</div>
+                    <div class="metric-subtext">Global Presence</div>
+                </div>
+            </div>
+
+            <div class="key-wins-grid">
+                <div class="wins-section">
+                    <h3>🏆 Key Wins</h3>
+                    <ul class="wins-list">
+                        <li>
+                            <strong>Brand Dominance:</strong> "kokomo art association" ranks #1 with 64.86% CTR
+                        </li>
+                        <li>
+                            <strong>Mobile Excellence:</strong> 69.8% of traffic from mobile with 7.2% CTR
+                        </li>
+                        <li>
+                            <strong>Global Reach:</strong> Search visibility across 62 countries worldwide
+                        </li>
+                        <li>
+                            <strong>High-Intent Content:</strong> Digital photography page achieves 7.46% CTR
+                        </li>
+                        <li>
+                            <strong>Local SEO Success:</strong> Multiple Kokomo-related queries in top positions
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="opportunities-section">
+                    <h3>🎯 Growth Opportunities</h3>
+                    <ul class="opportunities-list">
+                        <li>
+                            <strong>Desktop Optimization:</strong> Improve 1.88% desktop CTR for better conversion
+                        </li>
+                        <li>
+                            <strong>International SEO:</strong> Capitalize on 531 international impressions
+                        </li>
+                        <li>
+                            <strong>Content Expansion:</strong> Build on digital photography success
+                        </li>
+                        <li>
+                            <strong>Query Diversification:</strong> Target broader art-related search terms
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Global Reach Tab -->
+        <section id="global" class="tab-content">
+            <div class="global-header">
+                <h2>Global Reach Analysis</h2>
+                <p>Search visibility across 62 countries with US market dominance</p>
+            </div>
+            
+            <div class="global-metrics">
+                <div class="country-card primary">
+                    <div class="country-flag">🇺🇸</div>
+                    <div class="country-data">
+                        <h3>United States</h3>
+                        <div class="country-stats">
+                            <span class="stat">95 clicks (99%)</span>
+                            <span class="stat">1,906 impressions</span>
+                            <span class="stat">4.98% CTR</span>
+                            <span class="stat">Avg. Position: 15.9</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="country-card secondary">
+                    <div class="country-flag">🇧🇩</div>
+                    <div class="country-data">
+                        <h3>Bangladesh</h3>
+                        <div class="country-stats">
+                            <span class="stat">1 click</span>
+                            <span class="stat">2 impressions</span>
+                            <span class="stat">50% CTR</span>
+                            <span class="stat">Avg. Position: 45.5</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="international-summary">
+                    <h3>International Overview</h3>
+                    <div class="international-stats">
+                        <div class="int-stat">
+                            <span class="int-number">61</span>
+                            <span class="int-label">Other Countries</span>
+                        </div>
+                        <div class="int-stat">
+                            <span class="int-number">531</span>
+                            <span class="int-label">International Impressions</span>
+                        </div>
+                        <div class="int-stat">
+                            <span class="int-number">21.8%</span>
+                            <span class="int-label">Global Impression Share</span>
+                        </div>
+                    </div>
+                    <p class="international-note">
+                        Strong international presence indicates potential for global art community engagement
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Search Performance Tab -->
+        <section id="queries" class="tab-content">
+            <div class="queries-header">
+                <h2>Search Query Performance</h2>
+                <p>Analysis of 163 unique search queries driving traffic</p>
+            </div>
+            
+            <div class="query-performance">
+                <div class="top-queries">
+                    <h3>Top Performing Queries</h3>
+                    <div class="query-list">
+                        <div class="query-item brand-query">
+                            <div class="query-text">"kokomo art association"</div>
+                            <div class="query-metrics">
+                                <span class="query-clicks">24 clicks</span>
+                                <span class="query-impressions">37 impressions</span>
+                                <span class="query-ctr success">64.86% CTR</span>
+                                <span class="query-position top">Position #1</span>
+                            </div>
+                        </div>
+                        
+                        <div class="query-item">
+                            <div class="query-text">"kaa online"</div>
+                            <div class="query-metrics">
+                                <span class="query-clicks">3 clicks</span>
+                                <span class="query-impressions">13 impressions</span>
+                                <span class="query-ctr good">23.08% CTR</span>
+                                <span class="query-position">Position #8.85</span>
+                            </div>
+                        </div>
+                        
+                        <div class="query-item">
+                            <div class="query-text">"kokomo art center"</div>
+                            <div class="query-metrics">
+                                <span class="query-clicks">2 clicks</span>
+                                <span class="query-impressions">21 impressions</span>
+                                <span class="query-ctr">9.52% CTR</span>
+                                <span class="query-position top">Position #2.14</span>
+                            </div>
+                        </div>
+                        
+                        <div class="query-item">
+                            <div class="query-text">"kokomo art gallery"</div>
+                            <div class="query-metrics">
+                                <span class="query-clicks">2 clicks</span>
+                                <span class="query-impressions">11 impressions</span>
+                                <span class="query-ctr good">18.18% CTR</span>
+                                <span class="query-position top">Position #1.64</span>
+                            </div>
+                        </div>
+                        
+                        <div class="query-item">
+                            <div class="query-text">"artworks gallery"</div>
+                            <div class="query-metrics">
+                                <span class="query-clicks">1 click</span>
+                                <span class="query-impressions">100 impressions</span>
+                                <span class="query-ctr low">1% CTR</span>
+                                <span class="query-position">Position #63.04</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="ctr-chart">
+                    <h3>Query CTR Analysis</h3>
+                    <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/e4ef504dab1e4d353fff4acfec5b43a2/ab9b9daa-7955-42bc-be64-946ebbc46dee/314d85fa.png" alt="Search Query CTR Performance Chart" class="chart-image">
+                    <p class="chart-insight">
+                        Brand queries significantly outperform generic terms, indicating strong brand recognition
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page Analytics Tab -->
+        <section id="pages" class="tab-content">
+            <div class="pages-header">
+                <h2>Page Performance Analytics</h2>
+                <p>Click distribution and performance across key website pages</p>
+            </div>
+            
+            <div class="page-performance">
+                <div class="page-grid">
+                    <div class="page-card primary-page">
+                        <div class="page-icon">🏠</div>
+                        <h3>Homepage</h3>
+                        <div class="page-metrics">
+                            <div class="page-metric">
+                                <span class="metric-number">48</span>
+                                <span class="metric-text">Clicks</span>
+                            </div>
+                            <div class="page-metric">
+                                <span class="metric-number">1,417</span>
+                                <span class="metric-text">Impressions</span>
+                            </div>
+                            <div class="page-metric">
+                                <span class="metric-number">3.39%</span>
+                                <span class="metric-text">CTR</span>
+                            </div>
+                            <div class="page-metric">
+                                <span class="metric-number">16.44</span>
+                                <span class="metric-text">Avg. Position</span>
+                            </div>
+                        </div>
+                        <div class="page-insight">Primary landing page capturing 50% of all clicks</div>
+                    </div>
+                    
+                    <div class="page-card">
+                        <div class="page-icon">🎨</div>
+                        <h3>Classes</h3>
+                        <div class="page-metrics">
+                            <div class="page-metric">
+                                <span class="metric-number">17</span>
+                                <span class="metric-text">Clicks</span>
+                            </div>
+                            <div class="page-metric">
+                                <span class="metric-number">491</span>
+                                <span class="metric-text">Impressions</span>
+                            </div>
+                            <div class="page-metric">
+                                <span class="metric-number">3.46%</span>
+                                <span class="metric-text">CTR</span>
+                            </div>
+                            <div class="page-metric">
+                                <span class="metric-number">8.66</span>
+                                <span class="metric-text">Avg. Position</span>
+                            </div>
+                        </div>
+                        <div class="page-insight">Strong education-focused traffic</div>
+                    </div>
+                    
+                    <div class="page-card">
+                        <div class="page-icon">🏛️</div>
+                        <h3>Art Center</h3>
+                        <div class="page-metrics">
+                            <div class="page-metric">
+                                <span class="metric-number">8</span>
+                                <span class="metric-text">Clicks</span>
+                            </div>
+                            <div class="page-metric">
+                                <span class="metric-number">351</span>
+                                <span class="metric-text">Impressions</span>
+                            </div>
+                            <div class="page-metric">
+                                <span class="metric-number">2.28%</span>
+                                <span class="metric-text">CTR</span>
+                            </div>
+                            <div class="page-metric">
+                                <span class="metric-number">9.03</span>
+                                <span class="metric-text">Avg. Position</span>
+                            </div>
+                        </div>
+                        <div class="page-insight">Location-based searches</div>
+                    </div>
+                    
+                    <div class="page-card standout">
+                        <div class="page-icon">📸</div>
+                        <h3>Digital Photography</h3>
+                        <div class="page-metrics">
+                            <div class="page-metric">
+                                <span class="metric-number">5</span>
+                                <span class="metric-text">Clicks</span>
+                            </div>
+                            <div class="page-metric">
+                                <span class="metric-number">67</span>
+                                <span class="metric-text">Impressions</span>
+                            </div>
+                            <div class="page-metric highlight">
+                                <span class="metric-number">7.46%</span>
+                                <span class="metric-text">CTR</span>
+                            </div>
+                            <div class="page-metric">
+                                <span class="metric-number">29.18</span>
+                                <span class="metric-text">Avg. Position</span>
+                            </div>
+                        </div>
+                        <div class="page-insight success">Highest CTR - Expansion opportunity!</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Device Insights Tab -->
+        <section id="devices" class="tab-content">
+            <div class="devices-header">
+                <h2>Device Performance Insights</h2>
+                <p>Mobile-first audience with significant engagement differences</p>
+            </div>
+            
+            <div class="device-analytics">
+                <div class="device-grid">
+                    <div class="device-card mobile-primary">
+                        <div class="device-icon">📱</div>
+                        <h3>Mobile</h3>
+                        <div class="device-percentage">69.8%</div>
+                        <div class="device-metrics">
+                            <div class="device-stat">
+                                <span class="stat-number">67</span>
+                                <span class="stat-label">Clicks</span>
+                            </div>
+                            <div class="device-stat">
+                                <span class="stat-number">931</span>
+                                <span class="stat-label">Impressions</span>
+                            </div>
+                            <div class="device-stat highlight">
+                                <span class="stat-number">7.2%</span>
+                                <span class="stat-label">CTR</span>
+                            </div>
+                            <div class="device-stat">
+                                <span class="stat-number">9.4</span>
+                                <span class="stat-label">Avg. Position</span>
+                            </div>
+                        </div>
+                        <div class="device-insight success">Excellent mobile engagement</div>
+                    </div>
+                    
+                    <div class="device-card desktop-secondary">
+                        <div class="device-icon">🖥️</div>
+                        <h3>Desktop</h3>
+                        <div class="device-percentage">29.2%</div>
+                        <div class="device-metrics">
+                            <div class="device-stat">
+                                <span class="stat-number">28</span>
+                                <span class="stat-label">Clicks</span>
+                            </div>
+                            <div class="device-stat">
+                                <span class="stat-number">1,492</span>
+                                <span class="stat-label">Impressions</span>
+                            </div>
+                            <div class="device-stat warning">
+                                <span class="stat-number">1.88%</span>
+                                <span class="stat-label">CTR</span>
+                            </div>
+                            <div class="device-stat">
+                                <span class="stat-number">21.85</span>
+                                <span class="stat-label">Avg. Position</span>
+                            </div>
+                        </div>
+                        <div class="device-insight warning">Needs optimization</div>
+                    </div>
+                    
+                    <div class="device-card tablet-minor">
+                        <div class="device-icon">📱</div>
+                        <h3>Tablet</h3>
+                        <div class="device-percentage">1%</div>
+                        <div class="device-metrics">
+                            <div class="device-stat">
+                                <span class="stat-number">1</span>
+                                <span class="stat-label">Clicks</span>
+                            </div>
+                            <div class="device-stat">
+                                <span class="stat-number">14</span>
+                                <span class="stat-label">Impressions</span>
+                            </div>
+                            <div class="device-stat">
+                                <span class="stat-number">7.14%</span>
+                                <span class="stat-label">CTR</span>
+                            </div>
+                            <div class="device-stat">
+                                <span class="stat-number">4.86</span>
+                                <span class="stat-label">Avg. Position</span>
+                            </div>
+                        </div>
+                        <div class="device-insight">Small but engaged audience</div>
+                    </div>
+                </div>
+                
+                <div class="device-comparison">
+                    <h3>Device Performance Chart</h3>
+                    <div class="comparison-chart" style="position: relative; height: 300px;">
+                        <canvas id="deviceChart"></canvas>
+                    </div>
+                    <div class="device-takeaways">
+                        <div class="takeaway mobile">
+                            <span class="takeaway-icon">📱</span>
+                            <strong>Mobile Success:</strong> 3.8x better CTR than desktop - mobile-optimized experience working well
+                        </div>
+                        <div class="takeaway desktop">
+                            <span class="takeaway-icon">🖥️</span>
+                            <strong>Desktop Opportunity:</strong> High impressions but low CTR suggests UX improvements needed
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Temporal Trends Tab -->
+        <section id="trends" class="tab-content">
+            <div class="trends-header">
+                <h2>Temporal Performance Trends</h2>
+                <p>Daily performance patterns over the last 7 days</p>
+            </div>
+            
+            <div class="trends-analysis">
+                <div class="trends-chart">
+                    <h3>Daily Performance Timeline</h3>
+                    <div class="timeline-chart" style="position: relative; height: 400px;">
+                        <canvas id="trendsChart"></canvas>
+                    </div>
+                </div>
+                
+                <div class="trends-insights">
+                    <h3>Performance Patterns</h3>
+                    <div class="trend-cards">
+                        <div class="trend-card">
+                            <div class="trend-date">Sep 5, 2025</div>
+                            <div class="trend-metric">6 clicks</div>
+                            <div class="trend-ctr highlight">5.61% CTR</div>
+                            <div class="trend-note">Peak performance day</div>
+                        </div>
+                        
+                        <div class="trend-card">
+                            <div class="trend-date">Sep 1, 2025</div>
+                            <div class="trend-metric">3 clicks</div>
+                            <div class="trend-ctr">4.05% CTR</div>
+                            <div class="trend-note">Strong weekend performance</div>
+                        </div>
+                        
+                        <div class="trend-card">
+                            <div class="trend-date">Sep 3, 2025</div>
+                            <div class="trend-metric">4 clicks</div>
+                            <div class="trend-ctr">3.42% CTR</div>
+                            <div class="trend-note">Consistent midweek traffic</div>
+                        </div>
+                    </div>
+                    
+                    <div class="trend-summary">
+                        <h4>Key Observations</h4>
+                        <ul>
+                            <li>Weekend traffic shows higher engagement rates</li>
+                            <li>Midweek performance remains consistent</li>
+                            <li>September 5th peak suggests event-driven interest</li>
+                            <li>Daily impression volume varies 71-117 range</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEO Analysis Tab -->
+        <section id="seo" class="tab-content">
+            <div class="seo-header">
+                <h2>SEO Analysis & Opportunities</h2>
+                <p>Position analysis and optimization recommendations</p>
+            </div>
+            
+            <div class="seo-analysis">
+                <div class="position-analysis">
+                    <h3>Position Performance</h3>
+                    <div class="position-grid">
+                        <div class="position-card excellent">
+                            <div class="position-range">#1-3</div>
+                            <div class="position-queries">Brand queries</div>
+                            <div class="position-performance">64.86% CTR avg</div>
+                            <div class="position-status">Excellent</div>
+                        </div>
+                        
+                        <div class="position-card good">
+                            <div class="position-range">#4-10</div>
+                            <div class="position-queries">Local art terms</div>
+                            <div class="position-performance">15-25% CTR</div>
+                            <div class="position-status">Good</div>
+                        </div>
+                        
+                        <div class="position-card opportunity">
+                            <div class="position-range">#11+</div>
+                            <div class="position-queries">Generic art terms</div>
+                            <div class="position-performance">1-5% CTR</div>
+                            <div class="position-status">Opportunity</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="seo-opportunities">
+                    <h3>Optimization Opportunities</h3>
+                    <div class="opportunity-list">
+                        <div class="opportunity-item high-priority">
+                            <div class="opportunity-header">
+                                <h4>Improve Desktop CTR</h4>
+                                <span class="priority-badge high">High Priority</span>
+                            </div>
+                            <p>Desktop CTR (1.88%) significantly below mobile (7.2%). Focus on meta descriptions and page titles optimization.</p>
+                            <div class="opportunity-impact">Potential: +15-20 additional clicks/month</div>
+                        </div>
+                        
+                        <div class="opportunity-item medium-priority">
+                            <div class="opportunity-header">
+                                <h4>Expand Digital Photography Content</h4>
+                                <span class="priority-badge medium">Medium Priority</span>
+                            </div>
+                            <p>7.46% CTR indicates high interest. Create more photography-related content and classes.</p>
+                            <div class="opportunity-impact">Potential: +10-15 additional clicks/month</div>
+                        </div>
+                        
+                        <div class="opportunity-item medium-priority">
+                            <div class="opportunity-header">
+                                <h4>Target International Keywords</h4>
+                                <span class="priority-badge medium">Medium Priority</span>
+                            </div>
+                            <p>531 international impressions suggest global interest. Consider international SEO strategies.</p>
+                            <div class="opportunity-impact">Potential: +5-10 additional clicks/month</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Action Items Tab -->
+        <section id="actions" class="tab-content">
+            <div class="actions-header">
+                <h2>Priority Action Items</h2>
+                <p>Strategic recommendations based on performance data</p>
+            </div>
+            
+            <div class="actions-timeline">
+                <div class="action-card high-impact">
+                    <div class="action-header">
+                        <div class="action-priority">
+                            <span class="priority-badge high">High Priority</span>
+                            <span class="action-timeline">30 days</span>
+                        </div>
+                        <h3>Optimize Mobile Experience</h3>
+                    </div>
+                    <div class="action-body">
+                        <div class="action-rationale">
+                            <strong>Rationale:</strong> 67 of 96 clicks from mobile (69.8%) with excellent 7.2% CTR
+                        </div>
+                        <div class="action-tasks">
+                            <h4>Tasks:</h4>
+                            <ul>
+                                <li>Enhance mobile navigation and user flow</li>
+                                <li>Optimize mobile page load speeds</li>
+                                <li>Improve mobile form experiences</li>
+                                <li>Implement mobile-specific call-to-actions</li>
+                            </ul>
+                        </div>
+                        <div class="action-owner">👥 Owner: Web Development Team</div>
+                    </div>
+                </div>
+                
+                <div class="action-card high-impact">
+                    <div class="action-header">
+                        <div class="action-priority">
+                            <span class="priority-badge high">High Priority</span>
+                            <span class="action-timeline">45 days</span>
+                        </div>
+                        <h3>Expand Digital Photography Content</h3>
+                    </div>
+                    <div class="action-body">
+                        <div class="action-rationale">
+                            <strong>Rationale:</strong> Highest CTR at 7.46% indicates strong user interest
+                        </div>
+                        <div class="action-tasks">
+                            <h4>Tasks:</h4>
+                            <ul>
+                                <li>Create comprehensive digital photography course pages</li>
+                                <li>Add photography portfolio galleries</li>
+                                <li>Develop photography technique blog content</li>
+                                <li>Launch specialized photography workshops</li>
+                            </ul>
+                        </div>
+                        <div class="action-owner">👥 Owner: Content & Programming Teams</div>
+                    </div>
+                </div>
+                
+                <div class="action-card medium-impact">
+                    <div class="action-header">
+                        <div class="action-priority">
+                            <span class="priority-badge medium">Medium Priority</span>
+                            <span class="action-timeline">60 days</span>
+                        </div>
+                        <h3>Target International SEO</h3>
+                    </div>
+                    <div class="action-body">
+                        <div class="action-rationale">
+                            <strong>Rationale:</strong> 531 international impressions across 61 countries
+                        </div>
+                        <div class="action-tasks">
+                            <h4>Tasks:</h4>
+                            <ul>
+                                <li>Research international art community keywords</li>
+                                <li>Create content for virtual participation</li>
+                                <li>Optimize for international search terms</li>
+                                <li>Consider time zone optimization</li>
+                            </ul>
+                        </div>
+                        <div class="action-owner">👥 Owner: Marketing Team</div>
+                    </div>
+                </div>
+                
+                <div class="action-card medium-impact">
+                    <div class="action-header">
+                        <div class="action-priority">
+                            <span class="priority-badge medium">Medium Priority</span>
+                            <span class="action-timeline">90 days</span>
+                        </div>
+                        <h3>Improve Desktop User Experience</h3>
+                    </div>
+                    <div class="action-body">
+                        <div class="action-rationale">
+                            <strong>Rationale:</strong> Low 1.88% CTR suggests UX improvements needed
+                        </div>
+                        <div class="action-tasks">
+                            <h4>Tasks:</h4>
+                            <ul>
+                                <li>Redesign desktop navigation and layout</li>
+                                <li>A/B test meta descriptions and titles</li>
+                                <li>Improve desktop-specific content presentation</li>
+                                <li>Optimize desktop conversion funnels</li>
+                            </ul>
+                        </div>
+                        <div class="action-owner">👥 Owner: UX/UI Team</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="implementation-summary">
+                <h3>Implementation Summary</h3>
+                <div class="summary-stats">
+                    <div class="summary-stat">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">Action Items</span>
+                    </div>
+                    <div class="summary-stat">
+                        <span class="stat-number">2</span>
+                        <span class="stat-label">High Priority</span>
+                    </div>
+                    <div class="summary-stat">
+                        <span class="stat-number">225</span>
+                        <span class="stat-label">Total Days</span>
+                    </div>
+                    <div class="summary-stat">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Teams Involved</span>
+                    </div>
+                </div>
+                <div class="next-steps">
+                    <h4>Next Steps</h4>
+                    <ol>
+                        <li>Assign team leads and create project timelines</li>
+                        <li>Set up monthly progress tracking meetings</li>
+                        <li>Establish KPI benchmarks for each initiative</li>
+                        <li>Schedule quarterly board review sessions</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

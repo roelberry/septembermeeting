@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kokomo Art Association - Website Analytics Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Header -->
+        <header class="dashboard-header">
+            <div class="header-content">
+                <h1>Kokomo Art Association</h1>
+                <p>Website Analytics & Performance Dashboard</p>
+                <button class="btn btn--outline print-btn" onclick="window.print()">📄 Print Report</button>
+            </div>
+        </header>
+
+        <!-- Navigation Tabs -->
+        <nav class="tab-navigation">
+            <button class="tab-btn active" data-tab="summary">Executive Summary</button>
+            <button class="tab-btn" data-tab="traffic">Traffic Analysis</button>
+            <button class="tab-btn" data-tab="seo">SEO Performance</button>
+            <button class="tab-btn" data-tab="engagement">User Engagement</button>
+            <button class="tab-btn" data-tab="opportunities">Growth Opportunities</button>
+            <button class="tab-btn" data-tab="actions">Action Items</button>
+        </nav>
+
+        <!-- Executive Summary Tab -->
+        <section id="summary" class="tab-content active">
+            <div class="summary-grid">
+                <!-- Key Metrics Cards -->
+                <div class="metric-card highlight">
+                    <div class="metric-value">377</div>
+                    <div class="metric-label">Total Sessions</div>
+                    <div class="metric-trend positive">+20% growth</div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-value">249</div>
+                    <div class="metric-label">Unique Visitors</div>
+                    <div class="metric-subtext">14 returning</div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-value">5m 26s</div>
+                    <div class="metric-label">Avg. Session Duration</div>
+                    <div class="metric-subtext">Above average</div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-value">58.7%</div>
+                    <div class="metric-label">Bounce Rate</div>
+                    <div class="metric-subtext">Room for improvement</div>
+                </div>
+            </div>
+
+            <div class="summary-highlights">
+                <div class="highlight-section">
+                    <h3>Key Successes</h3>
+                    <ul>
+                        <li>🎯 Strong organic search presence (34% of traffic)</li>
+                        <li>📱 Mobile-first audience (62% mobile users)</li>
+                        <li>🎨 Bazaar page showing strong engagement</li>
+                        <li>📈 Steady 20% growth in overall traffic</li>
+                    </ul>
+                </div>
+                
+                <div class="highlight-section">
+                    <h3>Priority Focus Areas</h3>
+                    <ul>
+                        <li>🔧 Mobile experience optimization</li>
+                        <li>🎯 SEO keyword expansion</li>
+                        <li>📋 Registration form improvements</li>
+                        <li>📊 User engagement enhancement</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Traffic Analysis Tab -->
+        <section id="traffic" class="tab-content">
+            <div class="analysis-grid">
+                <div class="chart-container">
+                    <h3>Traffic Sources</h3>
+                    <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/c312c34d204a2da43e1e3761109c6e86/1b571c92-06fc-4154-8b77-703802974e2f/c42b3307.png" alt="Traffic Sources Chart" class="chart-image">
+                </div>
+                
+                <div class="device-breakdown">
+                    <h3>Device Usage</h3>
+                    <div class="device-stats">
+                        <div class="device-bar">
+                            <label>Mobile</label>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 62%">62%</div>
+                            </div>
+                        </div>
+                        <div class="device-bar">
+                            <label>Desktop</label>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 37%">37%</div>
+                            </div>
+                        </div>
+                        <div class="device-bar">
+                            <label>Tablet</label>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 1%">1%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="location-data">
+                    <h3>Geographic Distribution</h3>
+                    <div class="location-list">
+                        <div class="location-item">
+                            <span class="location-name">Indiana</span>
+                            <span class="location-sessions">322 sessions</span>
+                        </div>
+                        <div class="location-item">
+                            <span class="location-name">Illinois</span>
+                            <span class="location-sessions">7 sessions</span>
+                        </div>
+                        <div class="location-item">
+                            <span class="location-name">Michigan</span>
+                            <span class="location-sessions">5 sessions</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEO Performance Tab -->
+        <section id="seo" class="tab-content">
+            <div class="seo-grid">
+                <div class="seo-queries">
+                    <h3>Top Search Queries</h3>
+                    <div class="query-list">
+                        <div class="query-item">
+                            <div class="query-info">
+                                <span class="query-text">"kokomo art"</span>
+                                <span class="query-position status status--success">Position #3</span>
+                            </div>
+                            <span class="query-clicks">45 clicks</span>
+                        </div>
+                        <div class="query-item">
+                            <div class="query-info">
+                                <span class="query-text">"art classes kokomo"</span>
+                                <span class="query-position status status--warning">Position #5</span>
+                            </div>
+                            <span class="query-clicks">28 clicks</span>
+                        </div>
+                        <div class="query-item">
+                            <div class="query-info">
+                                <span class="query-text">"holiday bazaar"</span>
+                                <span class="query-position status status--success">Position #2</span>
+                            </div>
+                            <span class="query-clicks">35 clicks</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="page-performance">
+                    <h3>Top Performing Pages</h3>
+                    <div class="page-list">
+                        <div class="page-item">
+                            <span class="page-url">/homepage</span>
+                            <div class="page-visits">240 visits</div>
+                        </div>
+                        <div class="page-item">
+                            <span class="page-url">/classes</span>
+                            <div class="page-visits">50 visits</div>
+                        </div>
+                        <div class="page-item">
+                            <span class="page-url">/about</span>
+                            <div class="page-visits">47 visits</div>
+                        </div>
+                        <div class="page-item">
+                            <span class="page-url">/bazaar</span>
+                            <div class="page-visits">39 visits</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- User Engagement Tab -->
+        <section id="engagement" class="tab-content">
+            <div class="engagement-grid">
+                <div class="engagement-metrics">
+                    <h3>Engagement Overview</h3>
+                    <div class="metrics-row">
+                        <div class="metric-item">
+                            <span class="metric-number">2.1</span>
+                            <span class="metric-text">Pages per Session</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-number">5</span>
+                            <span class="metric-text">Form Submissions</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-number">58.7%</span>
+                            <span class="metric-text">Bounce Rate</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="top-actions">
+                    <h3>Most Popular Actions</h3>
+                    <div class="action-list">
+                        <div class="action-item">
+                            <span class="action-name">Registration Form</span>
+                            <div class="action-bar">
+                                <div class="action-fill" style="width: 100%">30 clicks</div>
+                            </div>
+                        </div>
+                        <div class="action-item">
+                            <span class="action-name">Pottery Class Info</span>
+                            <div class="action-bar">
+                                <div class="action-fill" style="width: 50%">15 clicks</div>
+                            </div>
+                        </div>
+                        <div class="action-item">
+                            <span class="action-name">Watercolor Techniques</span>
+                            <div class="action-bar">
+                                <div class="action-fill" style="width: 47%">14 clicks</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="user-flow">
+                    <h3>Common User Journey</h3>
+                    <div class="flow-path">
+                        <div class="flow-step">Homepage</div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-step">Classes</div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-step">Registration</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Growth Opportunities Tab -->
+        <section id="opportunities" class="tab-content">
+            <div class="opportunities-container">
+                <h3>Strategic Growth Matrix</h3>
+                <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/c312c34d204a2da43e1e3761109c6e86/31b205ec-8472-437a-bfd1-b720cd3e9c78/ec063089.png" alt="Growth Opportunities Matrix" class="matrix-image">
+                
+                <div class="opportunity-details">
+                    <div class="opportunity-category">
+                        <h4>🚀 Quick Wins (High Impact - Low Effort)</h4>
+                        <ul>
+                            <li>Optimize class registration forms for mobile</li>
+                            <li>Add customer testimonials to key pages</li>
+                            <li>Enhance holiday bazaar promotion</li>
+                        </ul>
+                        <div class="roi-estimate">Estimated ROI: 150-200%</div>
+                    </div>
+                    
+                    <div class="opportunity-category">
+                        <h4>📈 Major Projects (High Impact - High Effort)</h4>
+                        <ul>
+                            <li>Develop comprehensive member portal</li>
+                            <li>Create virtual studio tours</li>
+                            <li>Launch regular artist blog content</li>
+                        </ul>
+                        <div class="roi-estimate">Estimated ROI: 300-500%</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Action Items Tab -->
+        <section id="actions" class="tab-content">
+            <div class="actions-container">
+                <h3>Priority Action Items</h3>
+                <div class="action-timeline">
+                    <div class="action-card high-impact">
+                        <div class="action-header">
+                            <h4>Improve Mobile User Experience</h4>
+                            <span class="impact-badge high">High Impact</span>
+                        </div>
+                        <div class="action-details">
+                            <div class="action-info">
+                                <span class="action-owner">👥 Owner: Web Team</span>
+                                <span class="action-timeline">⏱️ Timeline: 30 days</span>
+                            </div>
+                            <div class="action-description">
+                                Focus on registration forms, navigation, and page load speeds for mobile users (62% of traffic).
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="action-card medium-impact">
+                        <div class="action-header">
+                            <h4>Expand SEO Keyword Targeting</h4>
+                            <span class="impact-badge medium">Medium Impact</span>
+                        </div>
+                        <div class="action-details">
+                            <div class="action-info">
+                                <span class="action-owner">👥 Owner: Marketing</span>
+                                <span class="action-timeline">⏱️ Timeline: 45 days</span>
+                            </div>
+                            <div class="action-description">
+                                Target additional local art-related keywords and optimize existing content.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="action-card high-impact">
+                        <div class="action-header">
+                            <h4>Streamline Membership Signup</h4>
+                            <span class="impact-badge high">High Impact</span>
+                        </div>
+                        <div class="action-details">
+                            <div class="action-info">
+                                <span class="action-owner">👥 Owner: Admin</span>
+                                <span class="action-timeline">⏱️ Timeline: 60 days</span>
+                            </div>
+                            <div class="action-description">
+                                Simplify registration process and improve conversion from visitor to member.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
